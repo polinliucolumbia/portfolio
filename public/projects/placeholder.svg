@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#EDEBE5"/>
+
+  <!-- Subtle crosshair -->
+  <line x1="800" y1="380" x2="800" y2="420" stroke="#D8D4C9" stroke-width="1.5"/>
+  <line x1="780" y1="400" x2="820" y2="400" stroke="#D8D4C9" stroke-width="1.5"/>
+  <circle cx="800" cy="400" r="28" stroke="#D8D4C9" stroke-width="1"/>
+
+  <!-- Corner marks -->
+  <path d="M60 60 L60 80 M60 60 L80 60" stroke="#D8D4C9" stroke-width="1"/>
+  <path d="M1540 60 L1540 80 M1540 60 L1520 60" stroke="#D8D4C9" stroke-width="1"/>
+  <path d="M60 840 L60 820 M60 840 L80 840" stroke="#D8D4C9" stroke-width="1"/>
+  <path d="M1540 840 L1540 820 M1540 840 L1520 840" stroke="#D8D4C9" stroke-width="1"/>
+</svg>
