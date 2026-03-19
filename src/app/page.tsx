@@ -16,7 +16,7 @@ const heroImages = [
   { src: "/images/ticker/flower-pastels.jpg", alt: "" },
   { src: "/images/ticker/squiggles-hero-vid.mp4", alt: "" },
   { src: "/images/ticker/cloudy-pastels.jpg", alt: "" },
-  { src: "/images/ticker/spiritedaway.jpg", alt: "" },
+  { src: "/images/ticker/spirited-away-compressed.jpg", alt: "" },
   { src: "/images/ticker/eggplant.jpg", alt: "" },
 ];
 
