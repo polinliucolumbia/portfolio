@@ -7,7 +7,7 @@ import { ProjectGrid } from "@/components/projects/ProjectGrid";
 import { HeroTicker } from "@/components/home/HeroTicker";
 
 export const metadata: Metadata = {
-  title: "Polin Liu — Creative Technologist",
+  title: "Polin Liu",
 };
 
 const heroImages = [
