@@ -37,10 +37,10 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   title: {
     default: "Polin Liu",
-    template: "%s — Polin Liu",
+    template: "%s — Polin",
   },
   description:
-    "Creative technologist building things worth looking at — design, engineering, and art.",
+    "Building things worth looking at.",
   keywords: [
     "developer",
     "portfolio",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Polin Liu",
     description:
-      "Creative technologist building things worth looking at — design, engineering, and art.",
+      "Building things worth looking at.",
     type: "website",
     locale: "en_US",
   },
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Polin Liu",
     description:
-      "Creative technologist building things worth looking at — design, engineering, and art.",
+      "Building things worth looking at.",
   },
 };
 
