@@ -43,6 +43,8 @@ export interface Project {
   // ── Optional page-content fields ────────────────────────────────────────────
   /** Paragraphs for the "Context / Background" section. Omit to hide. */
   context?: string[];
+  /** Overrides the "Background." heading label for the context section. */
+  contextLabel?: string;
   /** Paragraphs for the "What I Did / Contribution" section. Omit to hide. */
   contribution?: string[];
   /** Paragraphs for the "Outcome / Result" section. Omit to hide. */
@@ -142,5 +144,37 @@ export const PROJECTS: Project[] = [
         primary: "https://menu-whisperer-545043514736.us-central1.run.app/",
       },
     },
-    
-    ];
+
+  {
+    slug: "daily-digest",
+    title: "Daily News Generator",
+    category: "Engineering",
+    year: 2026,
+    summary:
+      "An AI-powered daily news digest that automatically fetches articles from curated RSS feeds, summarizes and categorizes them with Claude, and serves a personalized newspaper-style web app — with a feedback loop that shapes future digests.",
+    roles: ["Full-Stack Development", "Prompt Engineering", "System Design"],
+    tools: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Claude Haiku",
+      "Vercel AI SDK",
+      "Zod",
+      "Supabase",
+      "Vercel",
+    ],
+    featured: true,
+    thumbnail: "/images/projectthumbnail/PO's Daily Digest.jpg",
+    hero:      "/images/projectthumbnail/PO's Daily Digest.jpg",
+    contextLabel: "Process & Details.",
+    context: [
+      "A Vercel cron job runs daily at noon UTC, fetching articles from five RSS feeds — The Verge, MIT Tech Review, BBC, NYT, and CNBC — and deduplicating them against a Supabase seen_articles table. New articles go to Claude Haiku via generateObject, constrained to a Zod schema that enforces topic taxonomy, headline summarization, and story-merging rules. The digest JSON is persisted to Supabase and rendered as a newspaper-style UI with a scrollable date timeline and expandable digest panels.",
+      "A feedback API stores per-story upvotes and downvotes, and those signals are injected into the next day's prompt — so the digest personalizes over time. The result: a fully self-running pipeline that requires zero manual work. Every morning, a fresh 5–10 minute read is generated, categorized, and published automatically.",
+    ],
+    links: {
+      primary: "https://pos-daily-digest.vercel.app/",
+    },
+  },
+
+  ];

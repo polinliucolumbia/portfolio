@@ -158,7 +158,7 @@ export default async function ProjectDetailPage({
           <Container>
             <FadeIn>
               <p className="text-label mb-6">( Context )</p>
-              <h2 className="text-h2 mb-8">Background.</h2>
+              <h2 className="text-h2 mb-8">{project.contextLabel ?? "Background."}</h2>
               <div className="flex flex-col gap-5 text-lead">
                 {project.context.map((text, i) => (
                   <p key={i}>{text}</p>
